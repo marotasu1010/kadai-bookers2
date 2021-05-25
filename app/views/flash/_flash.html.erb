@@ -1,0 +1,9 @@
+<p>
+ <% flash.each do |type, message| %>
+   <% if type =='alert' %>
+     <div id="error_explanation"><%= "error: #{message}" %></div>
+   <% elsif type == 'notice' %>
+     <div id="notice"><%= message %></div>
+   <%end %>
+ <% end %>
+ </p>
